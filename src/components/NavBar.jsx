@@ -5,9 +5,9 @@ function NavBar () {
         <nav> 
             <h2>Ansel Pedals</h2>
             <ul>
-                <lu><a href="#">Inicio</a></lu>
-                <lu><a href="#">M vave Digitales</a></lu>
-                <lu><a href="#">M vave Analogos</a></lu>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">M vave Digitales</a></li>
+                <li><a href="#">M vave Analogos</a></li>
             </ul>
             <CartWidget />
         </nav>
