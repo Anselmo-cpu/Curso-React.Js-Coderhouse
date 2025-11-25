@@ -11,8 +11,9 @@ function App() {
   return (
     <>
       <NavBar />
-      <ItemListContainer />
+      <ItemListContainer title="Bienvenido a Ansel Pedals" />
       <CartWidget />
+      
     </>
   )
 }

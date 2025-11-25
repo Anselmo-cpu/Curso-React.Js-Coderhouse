@@ -1,7 +1,8 @@
-function iItemListContainer() {
+
+const iItemListContainer = (props) => {
     return (
         <section>
-            <h2>Hola, Bienvenidos a Ansel Pedals. Nos especializamos en pedales de alta calidad.</h2>
+            <h2>{props.title}</h2>
         </section>
     )
 }
