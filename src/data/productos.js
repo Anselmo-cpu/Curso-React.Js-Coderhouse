@@ -1,4 +1,5 @@
 const products = [
+
   // ----- PEDALERAS DIGITALES -----
   {
     id: 1,
