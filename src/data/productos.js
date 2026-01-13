@@ -11,87 +11,42 @@ const products = [
   },
   {
     id: 2,
-    title: "M Vave Cube Baby Pro",
-    price: 75000,
+    title: "M Vave Tank G",
+    price: 120000,
     category: "digital",
     stock: 5,
-    img: "https://ae01.alicdn.com/kf/Sf524a413a8e94493b35ebb237aa7fabej.jpg",
+    img: "https://cdnx.jumpseller.com/guitarstore/image/61005914/resize/760/1013?1741206716",
     description: "Versión avanzada de Cube Baby con más presets."
   },
   {
     id: 3,
-    title: "M Vave Digital Reverb",
-    price: 32000,
+    title: "M Vave Mk 20",
+    price: 220000,
     category: "digital",
     stock: 4,
-    img: "https://ae01.alicdn.com/kf/S8f46b0fa5e5e4f8c9a81f6347f06405cw.jpg",
+    img: "https://http2.mlstatic.com/D_NQ_NP_2X_746902-CBT102559358112_122025-F.webp",
     description: "Pedalera digital con modos hall, room y plate."
   },
   {
     id: 4,
-    title: "M Vave Modulation FX",
-    price: 29500,
+    title: "M Vave MK 300",
+    price: 350000,
     category: "digital",
     stock: 8,
-    img: "https://ae01.alicdn.com/kf/S5908c815ad4445c59af134e2a742cede9.jpg",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNhO62fIyhfbjlmrG26NSZKGm_DhrlU81iBg&s",
     description: "Pedalera digital de modulación con chorus y flanger."
   },
   {
     id: 5,
-    title: "M Vave Digital Delay Pro",
-    price: 42000,
+    title: "M Vave Tank Mini",
+    price: 110000,
     category: "digital",
     stock: 7,
-    img: "https://ae01.alicdn.com/kf/S5a6b9c8f1d244e71b1a8c7b5d0a56789Z.jpg",
+    img: "https://acdn-us.mitiendanube.com/stores/005/685/596/products/diseno-sin-titulo-87-495d101e391b99a8c717466367623742-1024-1024.webp",
     description: "Pedalera digital avanzada de delay con presets."
   },
 
-  // ----- PEDALERAS ANALÓGICAS -----
-  {
-    id: 6,
-    title: "M Vave Analog Delay",
-    price: 28000,
-    category: "analog",
-    stock: 7,
-    img: "https://ae01.alicdn.com/kf/S2e949519c27e42df824ca60c7c16a1a8E.jpg",
-    description: "Pedal analógico con tono cálido y repetición suave."
-  },
-  {
-    id: 7,
-    title: "M Vave Distortion Mini",
-    price: 25000,
-    category: "analog",
-    stock: 10,
-    img: "https://ae01.alicdn.com/kf/S665a88f3f7c84bb6845ea67db10bc51bR.jpg",
-    description: "Pedal analógico de distorsión compacta."
-  },
-  {
-    id: 8,
-    title: "M Vave Mini Looper",
-    price: 35000,
-    category: "analog",
-    stock: 6,
-    img: "https://ae01.alicdn.com/kf/Sa742f8a3f8f34efe9d447b4b56c71622z.jpg",
-    description: "Pedal analógico compacto para looping."
-  },
-  {
-    id: 9,
-    title: "M Vave Analog Chorus",
-    price: 27000,
-    category: "analog",
-    stock: 5,
-    img: "https://ae01.alicdn.com/kf/S3f7c8b5f1a644e91b1c7c1f3e0a1234Y.jpg",
-    description: "Pedal analógico de chorus con sonido cálido."
-  },
-  {
-    id: 10,
-    title: "M Vave Analog Flanger",
-    price: 29000,
-    category: "analog",
-    stock: 6,
-    img: "https://ae01.alicdn.com/kf/S7e9d7a8c1f4d48ab9d6f3c1f2d0b56789X.jpg",
-    description: "Pedal analógico de flanger con rango completo."
-  }
+  
 ];
 
 
