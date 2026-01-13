@@ -7,7 +7,6 @@ function NavBar () {
             <ul>
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">M vave Digitales</a></li>
-                <li><a href="#">M vave Analogos</a></li>
             </ul>
             <CartWidget />
         </nav>
