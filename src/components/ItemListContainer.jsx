@@ -1,12 +1,12 @@
 import products from "../data/productos"
 import Item from "./Item"
-const iItemListContainer = (props) => {
+const ItemListContainer = (props) => {
     return (
         <section>
             <h2>{props.title}</h2>
         {
             products.map(( item ) => 
-                (item) => <Item
+                (item) => <Item 
                     key={item.id}
                     title={item.title}
                     img={item.img}
@@ -19,4 +19,4 @@ const iItemListContainer = (props) => {
     )
 }
 
-export default iItemListContainer
+export default ItemListContainer
