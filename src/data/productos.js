@@ -6,7 +6,7 @@ const products = [
     title: "Pedalera M Vave Cube Baby",
     price: 60000,
     category: "digital",
-    stock: 3,
+    stock: 10,
     img: "https://ae01.alicdn.com/kf/S3a0a9d7a494f463baada3e208ba68317P.jpg",
     description: "Pedalera digital compacta con múltiples efectos."
   },
@@ -15,7 +15,7 @@ const products = [
     title: "M Vave Tank G",
     price: 120000,
     category: "digital",
-    stock: 5,
+    stock: 7,
     img: "https://cdnx.jumpseller.com/guitarstore/image/61005914/resize/760/1013?1741206716",
     description: "Versión avanzada de Cube Baby con más presets."
   },
@@ -33,7 +33,7 @@ const products = [
     title: "M Vave MK 300",
     price: 350000,
     category: "digital",
-    stock: 8,
+    stock: 2,
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNhO62fIyhfbjlmrG26NSZKGm_DhrlU81iBg&s",
     description: "Pedalera digital de modulación con chorus y flanger."
   },

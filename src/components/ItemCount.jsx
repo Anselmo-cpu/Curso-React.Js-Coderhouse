@@ -1,26 +1,35 @@
+import { useState } from "react"
+
 export default function ItemCount(){
     const [count, setCount] = useState(1)
+
+    console.log("actualizacion de item count")
+    console.log("")
 
     function handleLess(){
         setCount(count -1 )
     }
 
-    function HandleAdd(){
+    function handleAdd(){
         setCount(count + 1)
     }
 
-    return
+    return (
+
         <div>
         <div>
             <button onClick={handleLess}></button>
             <span>{count}</span>
-            <button onClick={HandleAdd}></button>
+            <button onClick={handleAdd}></button>
         </div>
             <button>Agregar al carrito</button>
         </div>
-
-
-
-
-
+    )
+        
 }
+
+
+
+
+
+ 

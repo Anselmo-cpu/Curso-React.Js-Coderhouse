@@ -5,8 +5,8 @@ function NavBar () {
         <nav> 
             <h2>Ansel Pedals</h2>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">M vave Digitales</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Digitals Pedals M Vave</a></li>
             </ul>
             <CartWidget />
         </nav>
