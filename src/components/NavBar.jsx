@@ -1,14 +1,20 @@
-import CartWidget from "./CartWidget"
+import { Link } from "react-router-dom"
+
+
 
 function NavBar () {
     return (
         <nav> 
             <h2>Ansel Pedals</h2>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Digitals Pedals M Vave</a></li>
+                <li>
+                    <Link to="/">Home</Link>
+                </li>
+
+                <li>
+                    <Link to="/category/digital">Digitals Pedals M Vave</Link>
+                </li>
             </ul>
-            <CartWidget />
         </nav>
     )
 }

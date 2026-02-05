@@ -1,4 +1,6 @@
-export default function Item({ title, img, price })
+import { Link } from "react-router-dom";
+
+export default function Item({ id, title, img, price })
 
 {
   return (
@@ -6,7 +8,14 @@ export default function Item({ title, img, price })
       <img src={img} alt={title} width="200" />
       <h3>{title}</h3>
       <p>${price}</p>
-       <button>Ver Producto</button>
+
+      <Link to={`/item/${id}`}>
+          <button>Ver Producto</button>
+      </Link>
+
+
     </div>
   )
 }
+
+
