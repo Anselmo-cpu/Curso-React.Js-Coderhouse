@@ -1,10 +1,9 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 export default function ItemCount(){
     const [count, setCount] = useState(1)
 
     console.log("actualizacion de item count")
-    console.log("")
 
     function handleLess(){
         setCount(count -1 )
@@ -27,9 +26,5 @@ export default function ItemCount(){
     )
         
 }
-
-
-
-
 
  
