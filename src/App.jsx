@@ -1,8 +1,14 @@
+import Cart from "./components/Cart"
 import ItemDetailContainer from './components/ItemDetailContainer'
 import './App.css'
 import NavBar from './components/NavBar'
 import ItemListContainer from './components/ItemListContainer'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import Checkout from "./components/Checkout"
+
+
+
+
 
 
 
@@ -15,18 +21,19 @@ function App() {
       <Routes>
         <Route
           path="/"
-          element={<ItemListContainer title="Bienvenido a Ansel Pedals" />}
-        />
+          element={<ItemListContainer title="Bienvenido a Ansel Pedals" />} />
 
         <Route
           path="/category/:categoryId"
-          element={<ItemListContainer title="Pedales M Vave" />}
-        />
+          element={<ItemListContainer title="Pedales M Vave" />}  />
 
         <Route
           path="/item/:itemId"
-          element={<ItemDetailContainer />}
-        />
+          element={<ItemDetailContainer />} />
+
+        <Route 
+          path="/cart" 
+          element={<Cart />} />
 
         <Route
           path="*"
@@ -34,9 +41,13 @@ function App() {
             <div>
               <h1>404 - Página no encontrada</h1>
               <Link to="/">Ir al inicio</Link>
-            </div>
-          }
-        />
+            </div>} />
+
+        <Route 
+        path="/checkout" 
+        element={<Checkout />} />
+
+
       </Routes>
     </BrowserRouter>
   )

@@ -1,30 +1,27 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
-export default function ItemCount(){
-    const [count, setCount] = useState(1)
+export default function ItemCount({ stock, onAdd }) {
+  const [count, setCount] = useState(1)
 
-    console.log("actualizacion de item count")
+  function handleLess() {
+    if (count > 1) setCount(count - 1)
+  }
 
-    function handleLess(){
-        setCount(count -1 )
-    }
+  function handleAdd() {
+    if (count < stock) setCount(count + 1)
+  }
 
-    function handleAdd(){
-        setCount(count + 1)
-    }
+  return (
+    <div>
+      <div>
+        <button onClick={handleLess}>-</button>
+        <span>{count}</span>
+        <button onClick={handleAdd}>+</button>
+      </div>
 
-    return (
-
-        <div>
-        <div>
-            <button onClick={handleLess}></button>
-            <span>{count}</span>
-            <button onClick={handleAdd}></button>
-        </div>
-            <button>Agregar al carrito</button>
-        </div>
-    )
-        
+      <button onClick={() => onAdd(count)}>
+        Agregar al carrito
+      </button>
+    </div>
+  )
 }
-
- 
