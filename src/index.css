@@ -53,3 +53,32 @@ button:hover {
 section {
   padding: 2rem;
 }
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #111;
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+button {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  margin: 0.3rem 0;
+  background-color: #111;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #444;
+}
