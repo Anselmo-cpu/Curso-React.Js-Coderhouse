@@ -1,84 +1,198 @@
+/* ==========================
+   VARIABLES GLOBALES
+========================== */
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  --font-primary: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-heading: 'Poppins', sans-serif;
 
-  color: #222;
-  background-color: #f4f4f4;
+  --color-text: #222;
+  --color-bg: #f4f4f4;
+  --color-primary: #111;
+  --color-accent: #f0a500;
+  --color-btn-hover: #444;
+  --color-link: #61dafb;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --radius-btn: 6px;
+  --transition-speed: 0.3s;
 }
 
-/* RESET BÁSICO */
-* {
+/* ==========================
+   RESET
+========================== */
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
+  font-family: var(--font-primary);
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--color-text);
+  background-color: var(--color-bg);
   min-width: 320px;
   min-height: 100vh;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* LINKS */
+/* ==========================
+   LINKS
+========================== */
 a {
-  font-weight: 500;
   color: inherit;
   text-decoration: none;
+  font-weight: 500;
+  transition: color var(--transition-speed);
 }
 
-/* BOTONES */
+a:hover {
+  color: var(--color-accent);
+}
+
+/* ==========================
+   BOTONES
+========================== */
 button {
-  border-radius: 6px;
-  border: none;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
   font-family: inherit;
-  background-color: #111;
-  color: white;
+  font-weight: 500;
+  padding: 0.6em 1.2em;
+  border-radius: var(--radius-btn);
+  border: none;
+  background-color: var(--color-primary);
+  color: #fff;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: all var(--transition-speed) ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 button:hover {
-  background-color: #f0a500;
+  background-color: var(--color-accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
-/* SECCIONES */
-section {
-  padding: 2rem;
-}
-
-
+/* ==========================
+   NAV
+========================== */
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
-  background-color: #111;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--color-primary);
   color: #fff;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 nav ul {
   display: flex;
-  list-style: none;
   gap: 1rem;
+  list-style: none;
+  flex-wrap: wrap;
 }
 
-button {
-  cursor: pointer;
-  padding: 0.5rem 1rem;
-  margin: 0.3rem 0;
-  background-color: #111;
+nav a {
   color: #fff;
-  border: 1px solid #fff;
-  border-radius: 5px;
+  font-weight: 500;
+  padding: 0.3rem 0.6rem;
+  border-radius: var(--radius-btn);
+  transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
 }
 
-button:hover {
-  background-color: #444;
+nav a:hover {
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+}
+
+/* ==========================
+   SECCIONES
+========================== */
+section {
+  padding: 3rem 2rem;
+  background-color: #fff;
+  margin: 2rem 0;
+  border-radius: var(--radius-btn);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* ==========================
+   LOGO
+========================== */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  transition: transform var(--transition-speed), filter var(--transition-speed);
+  cursor: pointer;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 1.5em var(--color-accent));
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 1.5em var(--color-link));
+}
+
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* ==========================
+   CARDS / CONTENEDORES
+========================== */
+.card {
+  padding: 2em;
+  background-color: #fff;
+  border-radius: var(--radius-btn);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  margin: 1rem 0;
+  text-align: center;
+}
+
+/* ==========================
+   TEXTO AUXILIAR
+========================== */
+.read-the-docs {
+  color: #888;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  display: block;
+}
+
+/* ==========================
+   ROOT APP
+========================== */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* ==========================
+   MEDIA QUERIES
+========================== */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
 }
